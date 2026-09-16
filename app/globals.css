@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+/* DeskWork Brand Book v1.0 — design tokens */
+@theme {
+  /* Brand palette */
+  --color-primary-800: #0a3d39;
+  --color-primary-700: #0d4f4a;
+  --color-primary-200: #d9eae7;
+  --color-accent-300: #6ee7df;
+
+  /* Neutrals */
+  --color-canvas: #fafaf7;
+  --color-surface: #ffffff;
+  --color-line: #e9e3d6;
+  --color-ink: #14171e;
+  --color-secondary: #3a4256;
+  --color-muted: #7c7a72;
+
+  /* Priority states P1–P4 (canónicos) */
+  --color-p1: #b3331f;
+  --color-p2: #c2410c;
+  --color-p3: #a16207;
+  --color-p4: #047857;
+
+  /* Typography stacks (variables injected by next/font) */
+  --font-sans: var(--font-outfit), system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains-mono), ui-monospace, monospace;
+
+  /* Radii */
+  --radius-xs: 4px;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-pill: 9999px;
+
+  /* Eyebrow / tracking */
+  --tracking-eyebrow: 0.12em;
+}
+
+@layer base {
+  *,
+  *::before,
+  *::after {
+    border-color: var(--color-line);
+  }
+
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    background-color: var(--color-canvas);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-weight: 400;
+    line-height: 1.6;
+  }
+
+  ::selection {
+    background-color: var(--color-primary-200);
+    color: var(--color-primary-800);
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-sans);
+    color: var(--color-ink);
+    letter-spacing: -0.02em;
+    font-weight: 600;
+  }
+
+  code, kbd, samp {
+    font-family: var(--font-mono);
+  }
+}
+
+/* Reusable utilities */
+@utility eyebrow {
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: var(--tracking-eyebrow);
+  text-transform: uppercase;
+  color: var(--color-muted);
+}
