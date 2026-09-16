@@ -36,8 +36,8 @@ const beliefs = [
   },
   {
     n: "05",
-    title: "Lock-in estructural es deuda",
-    body: "Cada decisión técnica se valida contra los principios DW-01..DW-10. La velocidad es bienvenida; el lock-in estructural, no.",
+    title: "Diseñados para evitar dependencia estructural",
+    body: "Cada decisión técnica se valida contra los principios DW-01..DW-10. La velocidad es bienvenida; el lock-in estructural, no. Preservamos interoperabilidad y portabilidad — no como claim absoluto, sino como decisión de diseño auditada.",
   },
   {
     n: "06",
@@ -47,7 +47,7 @@ const beliefs = [
   {
     n: "07",
     title: "Auditable por defecto",
-    body: "Toda acción relevante queda registrada. El audit ledger es inmutable. La trazabilidad no es opcional, es estructural.",
+    body: "Toda acción relevante queda registrada en un audit ledger protegido. La trazabilidad no es opcional, es estructural — y se mantiene por proceso, no por promesa.",
   },
   {
     n: "08",

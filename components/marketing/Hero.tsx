@@ -5,9 +5,9 @@ import { HeroVisual } from "./HeroVisual";
 
 const ticker = [
   { label: "Workspaces orquestados", value: "1", suffix: "plataforma" },
-  { label: "Sistemas compatibles", value: "BYOS", suffix: "sin lock-in" },
-  { label: "Workflows durables", value: "100%", suffix: "idempotentes" },
-  { label: "Audit ledger", value: "inmutable", suffix: "trazabilidad real" },
+  { label: "Sistemas compatibles", value: "BYOS", suffix: "postura abierta" },
+  { label: "Workflows durables", value: "Diseñados", suffix: "idempotencia + audit" },
+  { label: "Audit ledger", value: "Protegido", suffix: "trazabilidad real" },
 ];
 
 export function Hero() {

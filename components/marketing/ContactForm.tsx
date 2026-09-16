@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { CheckCircle2, Send } from "lucide-react";
+import { CheckCircle2, Send, Beaker } from "lucide-react";
 
 type FormState = {
   nombre: string;
@@ -94,6 +94,25 @@ export function ContactForm() {
       onSubmit={submit}
       className="rounded-lg border border-line bg-canvas p-6 md:p-8"
     >
+      <div className="mb-6 flex items-start gap-3 rounded-md border border-line bg-surface p-4">
+        <Beaker size={16} strokeWidth={2} className="mt-0.5 shrink-0 text-primary-700" />
+        <p className="text-[12px] leading-relaxed text-secondary">
+          <strong className="font-semibold text-ink">
+            Modo preview.
+          </strong>{" "}
+          Este formulario es solo UI por ahora: valida localmente y simula un
+          envío exitoso. En esta versión del sitio no se transmite a ningún
+          backend. Para conversar de verdad, escríbenos a{" "}
+          <a
+            href="mailto:hola@deskhub.example.com"
+            className="text-primary-700 underline"
+          >
+            hola@deskhub.example.com
+          </a>
+          .
+        </p>
+      </div>
+
       <div className="grid gap-4 md:grid-cols-2">
         <Field
           label="Nombre"

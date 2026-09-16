@@ -805,10 +805,19 @@ function slide08DeskWork(pres) {
 
   // Bottom note
   slide.addText(
-    "Principio mnemónico: \"DeskCore sostiene. Desk Integration conecta. DeskFlow coordina y ejecuta. DeskWork presenta.\"",
+    "Principio mnemónico:",
     {
-      x: 0.6, y: 4.7, w: W - 1.2, h: 0.4,
-      fontFace: FONT.body, fontSize: 11,
+      x: 0.6, y: 4.55, w: W - 1.2, h: 0.3,
+      fontFace: FONT.body, fontSize: 10, bold: true,
+      color: C.muted, align: "center", italic: true,
+      charSpacing: 2, margin: 0,
+    }
+  );
+  slide.addText(
+    "“DeskCore sostiene. Desk Integration conecta. DeskFlow coordina y ejecuta. DeskWork presenta.”",
+    {
+      x: 0.6, y: 4.85, w: W - 1.2, h: 0.4,
+      fontFace: FONT.body, fontSize: 12,
       color: C.secondary, align: "center", italic: true, margin: 0,
     }
   );
@@ -1537,8 +1546,13 @@ function slide20Services(pres) {
     color: C.primaryDeep, charSpacing: 2, margin: 0,
   });
 
-  slide.addText("DeskSolution construye lo que el cliente necesita hoy. Services acompaña la implementación, integración y operación.", {
-    x: 0.6, y: 5.05, w: W - 1.2, h: 0.4,
+  slide.addText("DeskSolution construye lo que el cliente necesita hoy.", {
+    x: 0.6, y: 5.0, w: W - 1.2, h: 0.3,
+    fontFace: FONT.body, fontSize: 11, italic: true,
+    color: C.muted, align: "center", margin: 0,
+  });
+  slide.addText("Services acompaña la implementación, integración y operación.", {
+    x: 0.6, y: 5.3, w: W - 1.2, h: 0.3,
     fontFace: FONT.body, fontSize: 11, italic: true,
     color: C.muted, align: "center", margin: 0,
   });
@@ -1669,11 +1683,19 @@ function slide23Vision(pres) {
   });
 
   slide.addText(
-    "Construir un ecosistema que permita a organizaciones empresariales e institucionales integrar, operar, comprender y evolucionar su trabajo sin tener que reconstruir desde cero su arquitectura tecnológica.",
+    "Construir un ecosistema que permita a organizaciones empresariales e institucionales integrar, operar, comprender y evolucionar su trabajo —",
     {
-      x: 0.6, y: 2.0, w: W - 1.2, h: 1.8,
-      fontFace: FONT.display, fontSize: 24, bold: true,
+      x: 0.6, y: 2.0, w: W - 1.2, h: 1.2,
+      fontFace: FONT.display, fontSize: 22, bold: true,
       color: C.ink, margin: 0,
+    }
+  );
+  slide.addText(
+    "sin tener que reconstruir desde cero su arquitectura tecnológica.",
+    {
+      x: 0.6, y: 3.2, w: W - 1.2, h: 0.7,
+      fontFace: FONT.display, fontSize: 22, bold: true,
+      color: C.primary, margin: 0,
     }
   );
 

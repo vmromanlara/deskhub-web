@@ -30,13 +30,20 @@ export const metadata: Metadata = {
     "DeskHUB",
     "DeskWork",
     "DeskFlow",
-    "Enterprise Workflow",
-    "Work Ecosystem",
+    "DeskCore",
+    "Desk Integration",
+    "Enterprise Work Ecosystem",
     "BYOS",
     "BYOT",
+    "Integración empresarial",
+    "Orquestación de sistemas",
   ],
   authors: [{ name: siteConfig.name }],
   creator: siteConfig.name,
+  publisher: siteConfig.name,
+  alternates: {
+    canonical: "/",
+  },
   icons: {
     icon: [{ url: "/icon.svg", type: "image/svg+xml" }],
   },
@@ -47,15 +54,30 @@ export const metadata: Metadata = {
     siteName: siteConfig.name,
     title: `${siteConfig.name} — ${siteConfig.tagline}`,
     description: siteConfig.description,
+    images: [
+      {
+        url: "/og-image.svg",
+        width: 1200,
+        height: 630,
+        alt: `${siteConfig.name} — ${siteConfig.tagline}`,
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: `${siteConfig.name} — ${siteConfig.tagline}`,
     description: siteConfig.description,
+    images: ["/og-image.svg"],
   },
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
   },
 };
 

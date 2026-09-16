@@ -2,7 +2,7 @@
 
 import { useState, useCallback } from "react";
 import { useRouter } from "next/navigation";
-import { ArrowLeft, ChevronRight } from "lucide-react";
+import { ArrowLeft, ChevronRight, Beaker } from "lucide-react";
 import { DemoHome } from "./DemoHome";
 import { DemoTickets } from "./DemoTickets";
 import { DemoTicketDetail } from "./DemoTicketDetail";
@@ -67,53 +67,73 @@ export function DemoShell() {
   };
 
   return (
-    <div className="border-b border-line bg-canvas">
-      <div className="container-page py-10">
-        <div className="mb-8 flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
-          <div>
-            <p className="eyebrow">Demo navegable · datos ficticios</p>
-            <h1 className="mt-2 text-[26px] font-semibold tracking-tight md:text-[32px]">
-              Recorre DeskWork en cinco pantallas.
-            </h1>
-          </div>
-          <button
-            type="button"
-            onClick={() => router.push("/")}
-            className="inline-flex h-10 items-center justify-center rounded-md border border-line bg-surface px-4 text-[13px] font-medium text-secondary hover:border-ink/30 hover:text-ink"
-          >
-            Salir de la demo
-          </button>
+    <>
+      {/* Persistent demo banner — non-decorative, explicit signal that this is not production. */}
+      <div
+        role="note"
+        aria-label="Aviso de demostración"
+        className="border-b border-line bg-primary-200"
+      >
+        <div className="container-page flex items-center gap-2 py-2 text-[12px] font-medium text-primary-800">
+          <Beaker size={14} strokeWidth={2} aria-hidden="true" />
+          <span className="font-mono uppercase tracking-wide">
+            Demo navegable · datos ficticios
+          </span>
+          <span className="hidden text-primary-700/70 md:inline">
+            — esto no es producción. Ningún ticket creado aquí se envía a
+            sistemas reales.
+          </span>
         </div>
+      </div>
 
-        <Stepper current={currentIndex} />
-
-        <div className="mt-6 overflow-hidden rounded-lg border border-line bg-surface">
-          {current.kind === "home" && <DemoHome nav={nav} />}
-          {current.kind === "tickets" && <DemoTickets nav={nav} />}
-          {current.kind === "ticket" && <DemoTicketDetail nav={nav} ticketId={current.id} />}
-          {current.kind === "create" && <DemoCreateRequest nav={nav} />}
-          {current.kind === "confirmation" && (
-            <DemoConfirmation
-              nav={nav}
-              ticketNumber={current.ticketNumber}
-            />
-          )}
-        </div>
-
-        {stack.length > 1 && (
-          <div className="mt-6">
+      <section className="border-b border-line bg-canvas">
+        <div className="container-page py-10">
+          <div className="mb-8 flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+            <div>
+              <p className="eyebrow">Demo navegable · datos ficticios</p>
+              <h1 className="mt-2 text-[26px] font-semibold tracking-tight md:text-[32px]">
+                Recorre DeskWork en cinco pantallas.
+              </h1>
+            </div>
             <button
               type="button"
-              onClick={back}
-              className="inline-flex h-10 items-center gap-2 rounded-md border border-line bg-surface px-4 text-[13px] font-medium text-secondary hover:border-ink/30 hover:text-ink"
+              onClick={() => router.push("/")}
+              className="inline-flex h-10 items-center justify-center rounded-md border border-line bg-surface px-4 text-[13px] font-medium text-secondary hover:border-ink/30 hover:text-ink"
             >
-              <ArrowLeft size={14} />
-              Atrás
+              Salir de la demo
             </button>
           </div>
-        )}
-      </div>
-    </div>
+
+          <Stepper current={currentIndex} />
+
+          <div className="mt-6 overflow-hidden rounded-lg border border-line bg-surface">
+            {current.kind === "home" && <DemoHome nav={nav} />}
+            {current.kind === "tickets" && <DemoTickets nav={nav} />}
+            {current.kind === "ticket" && <DemoTicketDetail nav={nav} ticketId={current.id} />}
+            {current.kind === "create" && <DemoCreateRequest nav={nav} />}
+            {current.kind === "confirmation" && (
+              <DemoConfirmation
+                nav={nav}
+                ticketNumber={current.ticketNumber}
+              />
+            )}
+          </div>
+
+          {stack.length > 1 && (
+            <div className="mt-6">
+              <button
+                type="button"
+                onClick={back}
+                className="inline-flex h-10 items-center gap-2 rounded-md border border-line bg-surface px-4 text-[13px] font-medium text-secondary hover:border-ink/30 hover:text-ink"
+              >
+                <ArrowLeft size={14} />
+                Atrás
+              </button>
+            </div>
+          )}
+        </div>
+      </section>
+    </>
   );
 }
 

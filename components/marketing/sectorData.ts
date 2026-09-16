@@ -18,18 +18,18 @@ export const sectors: Sector[] = [
     title: "Voluntarios, regionales y presupuesto ajustado. El trabajo no para por cambios de planilla.",
     summary:
       "Operaciones distribuidas con alta rotación de voluntarios, equipos administrativos pequeños y muchos canales informales. La prioridad la pone quien grita más fuerte; el conocimiento se pierde cuando alguien se va.",
-    tags: ["Voluntariado", "Regas", "Multi-sede", "Presupuesto limitado"],
+    tags: ["Voluntariado", "Regionales", "Multi-sede", "Presupuesto limitado"],
     challenges: [
       "Alta rotación de voluntarios y personal — el conocimiento operativo se va con ellos.",
-      "Tickets atendidos por WhatsApp, correo, formularios y canales informales mezclados.",
+      "Tickets atendidos por correo, formularios y canales informales mezclados.",
       "Una sola persona de TI atendiendo toda la organización, sin tiempo para sistematizar.",
       "Sedes regionales con necesidades distintas y poco margen para procesos únicos.",
       "Presupuesto limitado para licencias por usuario o por evento.",
     ],
     approach:
-      "Inbox unificado (WhatsApp + correo + web) que converge al mismo ticket. Prioridad calculada, no gritada. Asistente de 6 pasos para que el usuario no aprenda el sistema. Timer central y dashboards para que la única persona TI sepa dónde está la carga. Conocimiento que se queda en el audit ledger, no en la cabeza de nadie.",
+      "Inbox unificado (correo + web) que converge al mismo ticket. Prioridad calculada, no gritada. Asistente de 6 pasos para que el usuario no aprenda el sistema. Timer central y dashboards para que la única persona TI sepa dónde está la carga. Conocimiento que se queda en el audit ledger, no en la cabeza de nadie.",
     outcomes: [
-      "Misma persona TI puede atender 3× más volumen sin aumentar el equipo.",
+      "Más capacidad operativa con el mismo equipo de soporte — sin contratar más gente.",
       "El conocimiento de cada resolución queda recuperable, no se pierde con quien se va.",
       "Las sedes regionales ven sus propios KPIs sin esperar un reporte central.",
       "El presupuesto se vuelve predecible: una plataforma, sin sorpresas por seat o evento.",
@@ -46,7 +46,7 @@ export const sectors: Sector[] = [
       "Stack fragmentado: CRM, ERP, helpdesk, comunicación y archivos en sistemas distintos.",
       "El paso de 'persona que sostenía todo' a equipo formal es doloroso.",
       "Datos duplicados entre sistemas: la misma oportunidad vive en 3 lugares.",
-      "Decisiones tomadas en WhatsApp que nadie documenta después.",
+      "Decisiones tomadas en chat que nadie documenta después.",
       "Presupuesto para SaaS que crece sin control — nadie audita qué se usa.",
     ],
     approach:
@@ -54,7 +54,7 @@ export const sectors: Sector[] = [
     outcomes: [
       "Visibilidad real del estado de cada cliente/oportunidad, sin importar dónde viva.",
       "Reducción de licencias redundantes: pagas por lo que usas, no por inercia.",
-      "Onboarding de nuevos empleados 2× más rápido (contexto recuperable).",
+      "Onboarding de nuevos empleados más rápido gracias al contexto recuperable.",
       "Decisiones documentadas y buscables, no enterradas en grupos de chat.",
     ],
   },

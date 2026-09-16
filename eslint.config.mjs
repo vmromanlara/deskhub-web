@@ -12,6 +12,10 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Node-only build scripts (pptx generator, qa helpers).
+    "scripts/**",
+    // Presentation output (binary, not source).
+    "presentations/**",
   ]),
 ]);
 
