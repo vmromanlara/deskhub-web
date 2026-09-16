@@ -9,15 +9,15 @@ const footerCols = [
     links: [
       { href: "/deskwork" as const, label: "DeskWork" },
       { href: "/demo" as const, label: "Demo navegable" },
-      { href: "/contacto" as const, label: "Solicitar demo" },
+      { href: "/arquitectura" as const, label: "Arquitectura" },
     ],
   },
   {
     title: "Ecosistema",
     links: [
-      { href: "/" as const, label: "DeskHUB" },
-      { href: "/deskwork" as const, label: "DeskFlow" },
-      { href: "/deskwork" as const, label: "DeskCore" },
+      { href: "/manifiesto" as const, label: "Manifiesto" },
+      { href: "/sectores" as const, label: "Sectores" },
+      { href: "/arquitectura" as const, label: "DeskFlow · DeskCore" },
     ],
   },
   {

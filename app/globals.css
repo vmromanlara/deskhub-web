@@ -73,6 +73,49 @@
   code, kbd, samp {
     font-family: var(--font-mono);
   }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+/* Reveal on scroll (driven by .reveal--in toggled from <Reveal />) */
+.reveal {
+  opacity: 0;
+  transform: translateY(var(--reveal-y, 16px));
+  transition-property: opacity, transform;
+  transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+}
+.reveal--in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Ambient gradients that drift very slowly */
+@keyframes drift {
+  0% { transform: translate3d(0, 0, 0) scale(1); }
+  50% { transform: translate3d(2%, -1%, 0) scale(1.05); }
+  100% { transform: translate3d(0, 0, 0) scale(1); }
+}
+.drift-slow {
+  animation: drift 18s ease-in-out infinite;
+}
+.drift-slower {
+  animation: drift 26s ease-in-out infinite reverse;
+}
+
+@keyframes ticker-pulse {
+  0%, 100% { opacity: 0.55; }
+  50% { opacity: 1; }
+}
+.pulse-dot {
+  animation: ticker-pulse 1.6s ease-in-out infinite;
 }
 
 /* Reusable utilities */
