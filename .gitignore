@@ -39,3 +39,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# presentation QA scratch
+/tmp-md.txt
+/tmp-*.txt
