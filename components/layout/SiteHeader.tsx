@@ -20,7 +20,7 @@ export function SiteHeader() {
 
         <nav
           aria-label="Principal"
-          className="hidden items-center gap-1 md:flex"
+          className="hidden items-center gap-1 lg:flex"
         >
           {navItems.map((item) => {
             const active =

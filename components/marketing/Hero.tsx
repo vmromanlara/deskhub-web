@@ -56,7 +56,7 @@ export function Hero() {
               </span>
             </Reveal>
 
-            <Reveal as="p" y={16} duration={600} delay={180}>
+            <Reveal as="div" y={16} duration={600} delay={180}>
               <p className="mt-6 max-w-xl text-[17px] leading-relaxed text-secondary md:text-[18px]">
                 <strong className="font-semibold text-ink">DeskHUB</strong>{" "}
                 conecta tus sistemas, mantiene viva la conversación y deja que

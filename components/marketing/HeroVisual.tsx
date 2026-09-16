@@ -36,7 +36,7 @@ export function HeroVisual() {
     <div className="relative">
       <div
         aria-hidden="true"
-        className="absolute -inset-6 rounded-2xl opacity-50 blur-3xl"
+        className="absolute -inset-2 rounded-2xl opacity-50 blur-3xl"
         style={{
           background:
             "radial-gradient(500px 280px at 60% 30%, var(--color-primary-200), transparent 70%), radial-gradient(380px 240px at 20% 80%, var(--color-accent-300), transparent 70%)",
