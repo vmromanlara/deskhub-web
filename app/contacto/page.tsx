@@ -40,7 +40,8 @@ export default function ContactoPage() {
             <InfoRow
               icon={Mail}
               title="Correo"
-              body="hola@deskhub.example.com"
+              body="contacto@deskhub.cl"
+              href="mailto:contacto@deskhub.cl"
             />
             <InfoRow
               icon={MessageCircle}
@@ -73,10 +74,12 @@ function InfoRow({
   icon: Icon,
   title,
   body,
+  href,
 }: {
   icon: React.ComponentType<{ size?: number; strokeWidth?: number }>;
   title: string;
   body: string;
+  href?: string;
 }) {
   return (
     <div className="flex items-start gap-3 rounded-lg border border-line bg-canvas p-5">
@@ -85,7 +88,16 @@ function InfoRow({
       </div>
       <div>
         <p className="eyebrow">{title}</p>
-        <p className="mt-1 text-[14px] text-ink">{body}</p>
+        {href ? (
+          <a
+            href={href}
+            className="mt-1 inline-block text-[14px] text-primary-700 underline break-all"
+          >
+            {body}
+          </a>
+        ) : (
+          <p className="mt-1 text-[14px] text-ink">{body}</p>
+        )}
       </div>
     </div>
   );
