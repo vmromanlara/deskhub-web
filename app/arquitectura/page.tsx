@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { buildMetadata } from "@/lib/seo";
 import { Container } from "@/components/layout/Container";
 import { Reveal } from "@/components/ui/Reveal";
 import { ArchitectureDiagram } from "@/components/marketing/ArchitectureDiagram";
@@ -6,17 +7,11 @@ import { principles } from "@/components/marketing/dwPrinciples";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildMetadata({
+  path: "/arquitectura",
   title: "Arquitectura",
-  description:
-    "Cómo está construido DeskHUB: capas, principios DW-01..DW-10, decisiones técnicas que protegen la constitución del producto.",
-  openGraph: {
-    title: "Arquitectura — DeskHUB",
-    description:
-      "Capas, principios DW-01..DW-10, decisiones técnicas.",
-  },
-};
-
+  description: "Cómo está construido DeskHUB: capas, principios DW-01..DW-10, decisiones técnicas que protegen la constitución del producto.",
+});
 const stackLayers = [
   {
     name: "DeskWork",

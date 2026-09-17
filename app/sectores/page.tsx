@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { buildMetadata } from "@/lib/seo";
 import { Container } from "@/components/layout/Container";
 import { Reveal } from "@/components/ui/Reveal";
 import { sectors } from "@/components/marketing/sectorData";
@@ -6,17 +7,11 @@ import { Heart, Building2, Factory, GraduationCap } from "lucide-react";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildMetadata({
+  path: "/sectores",
   title: "Sectores",
-  description:
-    "Donde DeskHUB ha demostrado encajar primero: ONGs y fundaciones, PYMEs, operaciones distribuidas, instituciones educativas.",
-  openGraph: {
-    title: "Sectores — DeskHUB",
-    description:
-      "ONGs, PYMEs, operaciones distribuidas, instituciones educativas.",
-  },
-};
-
+  description: "Donde DeskHUB ha demostrado encajar primero: ONGs y fundaciones, PYMEs, operaciones distribuidas, instituciones educativas.",
+});
 const iconMap = {
   ong: Heart,
   pyme: Building2,

@@ -1,19 +1,14 @@
 import type { Metadata } from "next";
+import { buildMetadata } from "@/lib/seo";
 import { ContactForm } from "@/components/marketing/ContactForm";
 import { Container } from "@/components/layout/Container";
 import { Mail, MessageCircle, MapPin } from "lucide-react";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildMetadata({
+  path: "/contacto",
   title: "Contacto",
-  description:
-    "Conversemos sobre cómo DeskHUB puede orquestar tus sistemas y devolverle contexto a tu equipo.",
-  openGraph: {
-    title: "Contacto — DeskHUB",
-    description:
-      "Conversemos sobre cómo DeskHUB puede orquestar tus sistemas.",
-  },
-};
-
+  description: "Conversemos sobre cómo DeskHUB puede orquestar tus sistemas y devolverle contexto a tu equipo.",
+});
 export default function ContactoPage() {
   return (
     <>

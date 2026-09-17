@@ -1777,7 +1777,7 @@ function slide24Closing(pres) {
     fontFace: FONT.body, fontSize: 14, bold: true,
     color: C.accent, align: "center", charSpacing: 2, margin: 0,
   });
-  slide.addText("hola@deskhub.example.com · deskhub.example.com", {
+  slide.addText("contacto@deskhub.cl · www.deskhub.cl", {
     x: 0.6, y: 4.85, w: W - 1.2, h: 0.4,
     fontFace: FONT.mono, fontSize: 11,
     color: C.primarySoft, align: "center", margin: 0,

@@ -18,6 +18,10 @@ const jetbrainsMono = JetBrains_Mono({
   display: "swap",
 });
 
+// Root metadata now only carries the defaults that are *site-wide* and
+// identical on every page (title template, robots, icons, applicationName).
+// Each page exports its own metadata via `lib/seo.ts → buildMetadata(...)`
+// so canonical, OG and Twitter are guaranteed to be per-page.
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
@@ -26,48 +30,11 @@ export const metadata: Metadata = {
   },
   description: siteConfig.description,
   applicationName: siteConfig.name,
-  keywords: [
-    "DeskHUB",
-    "DeskWork",
-    "DeskFlow",
-    "DeskCore",
-    "Desk Integration",
-    "Enterprise Work Ecosystem",
-    "BYOS",
-    "BYOT",
-    "Integración empresarial",
-    "Orquestación de sistemas",
-  ],
   authors: [{ name: siteConfig.name }],
   creator: siteConfig.name,
   publisher: siteConfig.name,
-  alternates: {
-    canonical: "/",
-  },
   icons: {
     icon: [{ url: "/icon.svg", type: "image/svg+xml" }],
-  },
-  openGraph: {
-    type: "website",
-    locale: "es_CL",
-    url: siteConfig.url,
-    siteName: siteConfig.name,
-    title: `${siteConfig.name} — ${siteConfig.tagline}`,
-    description: siteConfig.description,
-    images: [
-      {
-        url: "/og-image.svg",
-        width: 1200,
-        height: 630,
-        alt: `${siteConfig.name} — ${siteConfig.tagline}`,
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: `${siteConfig.name} — ${siteConfig.tagline}`,
-    description: siteConfig.description,
-    images: ["/og-image.svg"],
   },
   robots: {
     index: true,

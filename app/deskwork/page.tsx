@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { buildMetadata } from "@/lib/seo";
 import { Purpose } from "@/components/product/Purpose";
 import { Capabilities } from "@/components/product/Capabilities";
 import { Views } from "@/components/product/Views";
@@ -7,16 +8,12 @@ import { Sectors } from "@/components/product/Sectors";
 import { ProductCta } from "@/components/product/Cta";
 import { Container } from "@/components/layout/Container";
 
-export const metadata: Metadata = {
-  title: "DeskWork — Producto",
+export const metadata: Metadata = buildMetadata({
+  path: "/deskwork",
+  title: "DeskWork",
   description:
     "DeskWork es el workspace institucional: tickets con prioridad calculada, timer central, workflow durable y dashboards vivos. La plataforma que tu equipo realmente abre todos los días.",
-  openGraph: {
-    title: "DeskWork — Producto",
-    description:
-      "Tickets con prioridad calculada, timer central, workflow durable y dashboards vivos.",
-  },
-};
+});
 
 export default function DeskWorkPage() {
   return (

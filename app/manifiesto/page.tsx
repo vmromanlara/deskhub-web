@@ -1,18 +1,14 @@
 import type { Metadata } from "next";
+import { buildMetadata } from "@/lib/seo";
 import { Container } from "@/components/layout/Container";
 import { Reveal } from "@/components/ui/Reveal";
 import { ManifestoCta } from "@/components/marketing/ManifestoCta";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildMetadata({
+  path: "/manifiesto",
   title: "Manifiesto",
-  description:
-    "Cómo pensamos DeskHUB: integrar antes que reemplazar, contexto sobre pantallas, economía predecible, posture BYOS/BYOT.",
-  openGraph: {
-    title: "Manifiesto — DeskHUB",
-    description: "Cómo pensamos DeskHUB.",
-  },
-};
-
+  description: "Cómo pensamos DeskHUB: integrar antes que reemplazar, contexto sobre pantallas, economía predecible, posture BYOS/BYOT.",
+});
 const beliefs = [
   {
     n: "01",
