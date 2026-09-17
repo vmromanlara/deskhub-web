@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ArrowRight, Sparkles, ArrowUpRight } from "lucide-react";
 import { Reveal } from "@/components/ui/Reveal";
+import { Container } from "@/components/layout/Container";
 import { HeroVisual } from "./HeroVisual";
 
 const ticker = [
@@ -30,9 +31,9 @@ export function Hero() {
         }}
       />
 
-      <div className="container-page relative pb-24 pt-20 md:pb-32 md:pt-28">
-        <div className="grid gap-16 lg:grid-cols-[1.05fr_1fr] lg:items-center">
-          <div>
+      <Container className="relative pb-16 pt-14 md:pb-24 md:pt-20">
+        <div className="grid gap-12 lg:grid-cols-[1.15fr_1fr] lg:items-center">
+          <div className="max-w-2xl">
             <Reveal as="div" y={12} duration={500}>
               <p className="eyebrow mb-6 inline-flex items-center gap-2 rounded-full border border-line bg-surface/70 px-3 py-1.5 backdrop-blur">
                 <span className="relative inline-flex h-2 w-2">
@@ -120,7 +121,7 @@ export function Hero() {
         </div>
 
         <Reveal y={12} duration={500} delay={420}>
-          <div className="mt-16 grid grid-cols-2 gap-4 border-t border-line pt-8 md:grid-cols-4">
+          <div className="mt-12 grid grid-cols-2 gap-4 border-t border-line pt-8 md:mt-14 md:grid-cols-4">
             {ticker.map((t) => (
               <div key={t.label} className="rounded-md border border-line bg-surface/60 p-4 backdrop-blur">
                 <p className="eyebrow">{t.label}</p>
@@ -132,7 +133,7 @@ export function Hero() {
             ))}
           </div>
         </Reveal>
-      </div>
+      </Container>
     </section>
   );
 }

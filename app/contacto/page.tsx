@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { buildMetadata } from "@/lib/seo";
 import { ContactForm } from "@/components/marketing/ContactForm";
 import { Container } from "@/components/layout/Container";
-import { Mail, MessageCircle, MapPin } from "lucide-react";
+import { Mail } from "lucide-react";
 
 export const metadata: Metadata = buildMetadata({
   path: "/contacto",
@@ -37,16 +37,6 @@ export default function ContactoPage() {
               title="Correo"
               body="contacto@deskhub.cl"
               href="mailto:contacto@deskhub.cl"
-            />
-            <InfoRow
-              icon={MessageCircle}
-              title="Conversación"
-              body="Te respondemos en menos de 48 horas hábiles."
-            />
-            <InfoRow
-              icon={MapPin}
-              title="Alcance"
-              body="Chile · LATAM · remoto-first."
             />
             <div className="rounded-lg border border-line bg-canvas p-5 text-[13px] leading-relaxed text-secondary">
               <strong className="font-semibold text-ink">
