@@ -4,7 +4,7 @@ export const siteConfig = {
   engine: "DeskFlow",
   tagline: "Enterprise Work Ecosystem",
   description:
-    "DeskHUB es el ecosistema DeskWork + DeskFlow que orquesta tus sistemas, integra tus operaciones y mantiene el contexto donde tu equipo realmente trabaja.",
+    "DeskHUB es un ecosistema de soluciones para centralizar, integrar, monitorear y gestionar la operación, conectando personas, sistemas y datos.",
   url: "https://www.deskhub.cl",
   locale: "es-CL",
   contactEmail: "contacto@deskhub.cl",
