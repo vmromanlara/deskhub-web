@@ -15,8 +15,8 @@ export function DeskWorkIntro() {
           <p className="mt-4 text-[16px] leading-relaxed text-secondary">
             DeskWork es la plataforma que presenta el trabajo: tickets, proyectos,
             aprobaciones, conocimiento y comunicación agrupados por contexto, no
-            por aplicación. Detrás, orquesta integraciones con tus sistemas.
-            Encima, mantiene a tu equipo enfocado en lo que importa.
+            por aplicación. Detrás, conecta y coordina integraciones con tus
+            sistemas. Encima, mantiene a tu equipo enfocado en lo que importa.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-3">

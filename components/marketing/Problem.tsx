@@ -15,7 +15,7 @@ const pains = [
   {
     icon: AlertTriangle,
     title: "Otra plataforma más, no la solución",
-    body: "Sumar herramientas no resolvió el problema: lo multiplicó. Lo que hace falta es un ecosistema que orquesta lo que ya tienes.",
+    body: "Sumar herramientas no resolvió el problema: lo multiplicó. Lo que hace falta es un ecosistema que centraliza, integra y organiza lo que ya tienes.",
   },
 ];
 
@@ -35,7 +35,8 @@ export function Problem() {
           <p className="mt-4 text-[16px] leading-relaxed text-secondary">
             Comprar más plataformas no devuelve el contexto. Reemplazar sistemas no
             devuelve el contexto. Lo que devuelve el contexto es un ecosistema que
-            mantiene viva la conversación entre personas, sistemas y datos.
+            centraliza, integra y organiza lo que ya tienes entre personas,
+            sistemas y datos.
           </p>
         </div>
 

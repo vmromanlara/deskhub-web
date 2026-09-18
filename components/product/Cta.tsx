@@ -20,7 +20,7 @@ export function ProductCta() {
               href="/demo"
               className="inline-flex h-12 items-center justify-center gap-2 rounded-md bg-primary-700 px-6 text-[15px] font-medium text-primary-200 transition-colors hover:bg-primary-800"
             >
-              Abrir la demo
+              Probar la demo
               <ArrowRight size={16} />
             </Link>
           </div>

@@ -8,7 +8,7 @@ export const principles: Principle[] = [
   {
     id: "DW-01",
     title: "System of Record & Conflict Governance",
-    body: "Cada dominio es dueño de su dato. DeskHUB orquesta; no pretende ser el system of record universal. Cuando hay conflictos entre fuentes, hay una política explícita que decide cuál gana, sin sorpresas.",
+    body: "Cada dominio es dueño de su dato. El ecosistema conecta y coordina; no pretende ser el system of record universal. Cuando hay conflictos entre fuentes, hay una política explícita que decide cuál gana, sin sorpresas.",
   },
   {
     id: "DW-02",

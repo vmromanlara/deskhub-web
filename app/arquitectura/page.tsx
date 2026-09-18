@@ -97,8 +97,8 @@ export default function ArquitecturaPage() {
             <p className="mt-10 max-w-3xl rounded-md border border-dashed border-line bg-canvas p-5 text-[13px] text-secondary">
               <strong className="font-semibold text-ink">Sistemas externos:</strong>{" "}
               ERP, CRM, correo, calendar, archivos, identidad, observabilidad.
-              DeskHUB orquesta; cada sistema conserva su autoridad sobre su
-              dato.
+              El ecosistema conecta y coordina; cada sistema conserva su
+              autoridad sobre su dato.
             </p>
           </Reveal>
         </Container>
@@ -161,7 +161,7 @@ export default function ArquitecturaPage() {
                 href="/demo"
                 className="mt-8 inline-flex h-12 items-center justify-center gap-2 rounded-md bg-primary-700 px-5 text-[15px] font-medium text-primary-200 transition-colors hover:bg-primary-800"
               >
-                Abrir la demo
+                Probar la demo
                 <ArrowRight size={16} />
               </Link>
             </div>

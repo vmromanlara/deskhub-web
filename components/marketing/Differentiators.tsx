@@ -4,8 +4,8 @@ import { Layers, Puzzle, Telescope, Wallet } from "lucide-react";
 const diffs = [
   {
     icon: Layers,
-    title: "Orquestamos, no absorbemos",
-    body: "Cada sistema conserva su autoridad sobre sus datos. DeskWork orquesta la conversación entre ellos; no se convierte en un nuevo ERP.",
+    title: "Conectamos sin reemplazar",
+    body: "Cada sistema conserva su autoridad sobre sus datos. DeskWork conecta y coordina la conversación entre ellos; no se convierte en un nuevo ERP.",
   },
   {
     icon: Puzzle,

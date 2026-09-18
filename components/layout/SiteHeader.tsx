@@ -50,7 +50,7 @@ export function SiteHeader() {
             href="/contacto"
             className="inline-flex h-10 items-center justify-center rounded-md bg-primary-700 px-4 text-[14px] font-medium text-primary-200 transition-colors hover:bg-primary-800"
           >
-            Solicitar demo
+            Hablar con el equipo
           </Link>
         </div>
 
@@ -95,7 +95,7 @@ export function SiteHeader() {
               onClick={() => setOpen(false)}
               className="mt-2 inline-flex h-11 items-center justify-center rounded-md bg-primary-700 px-4 text-[14px] font-medium text-primary-200"
             >
-              Solicitar demo
+              Hablar con el equipo
             </Link>
           </Container>
         </div>

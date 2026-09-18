@@ -60,12 +60,10 @@ export function Hero() {
             <Reveal as="div" y={16} duration={600} delay={180}>
               <p className="mt-6 max-w-xl text-[17px] leading-relaxed text-secondary md:text-[18px]">
                 <strong className="font-semibold text-ink">DeskHUB</strong>{" "}
-                conecta tus sistemas, mantiene viva la conversación y deja que
-                cada equipo trabaje donde ya trabaja.{" "}
-                <strong className="font-semibold text-ink">DeskWork</strong>{" "}
-                es el producto.{" "}
-                <strong className="font-semibold text-ink">DeskFlow</strong>{" "}
-                es el motor que orquesta todo.
+                es un ecosistema de soluciones para centralizar, integrar,
+                monitorear y gestionar la operación. Conecta personas, sistemas
+                y datos sin depender de grandes estructuras físicas ni
+                digitales.
               </p>
             </Reveal>
 
@@ -75,7 +73,7 @@ export function Hero() {
                   href="/demo"
                   className="group inline-flex h-12 items-center justify-center gap-2 rounded-md bg-primary-700 px-5 text-[15px] font-medium text-primary-200 transition-colors hover:bg-primary-800"
                 >
-                  Explorar la demo
+                  Probar la demo
                   <ArrowRight
                     size={16}
                     className="transition-transform group-hover:translate-x-0.5"
@@ -85,7 +83,7 @@ export function Hero() {
                   href="/contacto"
                   className="inline-flex h-12 items-center justify-center gap-2 rounded-md border border-line bg-surface px-5 text-[15px] font-medium text-ink transition-colors hover:border-ink/30"
                 >
-                  Solicitar una conversación
+                  Hablar con el equipo
                   <ArrowUpRight size={16} className="text-secondary" />
                 </Link>
               </div>

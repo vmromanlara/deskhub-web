@@ -32,7 +32,7 @@ export function MarketingCta() {
                 href="/demo"
                 className="inline-flex h-12 items-center justify-center gap-2 rounded-md bg-canvas px-5 text-[15px] font-medium text-primary-800 transition-colors hover:bg-surface"
               >
-                Entrar a la demo
+                Probar la demo
                 <ArrowRight size={16} />
               </Link>
               <Link

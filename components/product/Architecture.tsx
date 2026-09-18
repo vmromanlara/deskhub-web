@@ -66,8 +66,8 @@ export function Architecture() {
             ))}
             <div className="mt-2 rounded-md border border-dashed border-line bg-canvas p-4 text-[12px] text-muted">
               <strong className="text-ink">Sistemas externos:</strong> ERP, CRM,
-              correo, calendar, archivos, identidad. DeskWork orquesta; cada
-              sistema conserva su autoridad sobre su dato.
+              correo, calendar, archivos, identidad. DeskWork conecta y coordina;
+              cada sistema conserva su autoridad sobre su dato.
             </div>
           </div>
 
